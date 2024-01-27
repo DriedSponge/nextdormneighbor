@@ -1,10 +1,16 @@
 # NextDormNeighbor
 
-Winfo 2024 Hackathon - Built with create-svelte. 
+WINFO 2024 Hackathon - Best Coding Design Track
+
+Built using Svelte, NextDormNeighbor focuses on the problem of event organization within the UW Sphere specfically regarding on campus housing. 
+
+By David Pham, Harman Zhang, Jordan Tucker
 
 ## Developing
 
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
+Clone the repeistory and install dependencies with `npm install` (or `pnpm install` or `yarn`)
+
+To start a development server:
 
 ```bash
 npm run dev
