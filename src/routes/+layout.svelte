@@ -4,6 +4,10 @@
     import {user} from "$lib/auth.js";
     loggedIn();
 </script>
+<svelte:head>
+    <title>Nextdorm Neighbor</title>
+    <meta name="description" content="A web service for connecting to your dorm communities!">
+</svelte:head>
 <div class="h-screen flex flex-col ">
     {#if $user.loggedIn}
     <nav class="dark:bg-gray-700">
