@@ -1,3 +1,9 @@
+<!-- This page is for the navigation bar and the footer for every single webpage
+
+The navigation bar is made for the user to go around our webpage.
+
+The footer is for the background information in regards to the website. -->
+
 <script>
     import "../app.css";
     import loggedIn from "$lib/auth.js";

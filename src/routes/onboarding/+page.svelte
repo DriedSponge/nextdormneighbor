@@ -1,9 +1,5 @@
-
-<script>
-  let userEmail = "";
-  let username = "";
-  let userPassword = "";
-</script>
+<!-- This is a beta version of the onboarding page which users will go to in order to create their
+account for our website. Their information will ideally be collected and sent to the database. -->
 
 <div id="login" class="max-w-xl mx-auto">
   <div>
@@ -37,24 +33,12 @@
               UW Net ID Sign-up
           </span>
       </button>
-
-
-
-
-      <!-- <div>Email</div>
-      <input bind:value={userEmail} placeholder="Enter your email:" class="border-2 border-black"/>
-      <div>Username</div>
-      <input bind:value={username} placeholder="Enter your username:" class="border-2 border-black"/>
-      <div>Password</div>
-      <input bind:value={userPassword} placeholder="Enter your Password:" class="border-2 border-black"/>
-      <div>Confirm Password</div>
-      <input bind:value={userPassword} placeholder="Confirm Password:" class="border-2 border-black"/> -->
     </form>
   </div>
 </div>
 
 
-
+<!-- Styling the webpage -->
 <style lang="postcss">
   .input{
       @apply w-full p-2 rounded focus:outline-none border-0;
@@ -62,9 +46,5 @@
 
   #login{
     margin-top: 5%;
-  }
-
-  :global(body) {
-    background-image: url("https://images.axios.com/oJv84uuFPDd8dFiOkrJtYVAC9cM=/0x0:1920x1080/1920x1080/2022/10/06/1665090173966.png?w=1920");
   }
 </style>
