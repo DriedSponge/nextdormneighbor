@@ -30,8 +30,8 @@
 
 
 <footer class="dark:bg-gray-700">
-    <div class="w-full mx-auto max-w-screen-xl p-4 md:flex md:items-center md:justify-between">
-        <span class="dark:text-gray-100">Group 60 WINFO Hackathon: Jordan Tucker, David Pham, Harman Zhang.
+    <div class="mx-auto max-w-screen-xl p-4 md:flex md:justify-between">
+        <span class="dark:text-gray-100 italic">Group 60 WINFO Hackathon: Jordan Tucker, David Pham, Harman Zhang.
         </span>
         <ul class="dark:text-gray-100">
             <li>
@@ -40,3 +40,9 @@
         </ul>
     </div>
 </footer>
+
+<style>
+    footer{
+        margin-bottom: 0px;
+    }
+</style>
