@@ -6,8 +6,6 @@
     loggedIn();
 </script>
 
-
-
 <nav class="dark:bg-gray-700">
     <div class="mx-auto p-4">
         <ul class="flex md:space-x-8 md:flex-row md:border-0">
@@ -46,7 +44,6 @@
     </ul>
     </div>
 </footer>
-
 
 <main class="mx-auto container">
         <slot></slot>

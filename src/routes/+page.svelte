@@ -1,6 +1,7 @@
 <script>
-    import {login, logout, user} from "$lib/auth.js";
+    import {login, user} from "$lib/auth.js";
     import {object, string} from 'yup'
+    import Browse from "$lib/Browse.svelte";
 
     /**
      * @type string
@@ -25,15 +26,20 @@
     /**
      * Login the user
      * @param {Event} event
+     * @param {boolean} force
      */
-    function authenticate(event) {
+    function authenticate(event, force) {
         try {
-            loginSchema.validate({email: email, password: password})
-            event.target?.reset()
+            if (force) {
+                email = "UWStudent@uw.edu"
+            } else {
+                loginSchema.validate({email: email, password: password})
+                event.target?.reset()
+            }
             login(email)
             email = "";
             pageError = ""
-            password=""
+            password = ""
         } catch (e) {
             pageError = "You still have some errors to fix on the page!"
         }
@@ -56,7 +62,6 @@
      */
     function validateField(field, value) {
         try {
-            console.log(value)
             loginSchema.validateSyncAt(field, value);
             if (errors[field]) {
                 errors[field] = "";
@@ -68,8 +73,9 @@
     }
 </script>
 
-<h1 class="text-center text-3xl font-bold my-10">Welcome To Next Dorm Neighbor</h1>
 {#if !$user.loggedIn}
+    <h1 class="text-center text-3xl font-bold my-10">Welcome To Next Dorm Neighbor</h1>
+
     <div class="max-w-xl mx-auto">
         <div class="space-y-2">
             {#if pageError}
@@ -78,8 +84,9 @@
                 </div>
             {/if}
             <form class="flex flex-col space-y-5 bg-gray-200 p-8 rounded-2xl shadow-xl"
-                  on:submit|preventDefault={(e)=>{authenticate(e)}}>
+                  on:submit|preventDefault={(e)=>{authenticate(e,false)}}>
                 <h2 class="text-center text-2xl font-bold">Login</h2>
+                <p class="text-center text-gray-400 italic">This is a demo login. Please use any email or password!</p>
                 <label>
                     <span class="block">Email</span>
                     <input class:invalid={errors["email"]} name="email"
@@ -102,7 +109,8 @@
                         type="submit">Login
                 </button>
                 <hr class="border-black">
-                <button class="bg-purple-500 text-white p-3 rounded-xl flex flex-row items-center space-x-4 justify-center">
+                <button on:click={(event)=>{authenticate(event,true)}}
+                        class="bg-purple-500 text-white p-3 rounded-xl flex flex-row items-center space-x-4 justify-center">
                     <img alt="University of Washington Block W Logo" class="w-12"
                          src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/17/Washington_Huskies_logo.svg/1200px-Washington_Huskies_logo.svg.png">
                     <span class="block font-bold">
@@ -113,9 +121,8 @@
         </div>
     </div>
 {:else }
-
-
-    <button on:click={logout}>Logout</button>
+    <h1 class="text-center text-3xl font-bold my-10">Welcome {$user.name}!</h1>
+    <Browse></Browse>
 {/if}
 <style lang="postcss">
     .input {
