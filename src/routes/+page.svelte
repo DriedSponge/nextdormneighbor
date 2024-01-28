@@ -31,7 +31,7 @@
                 <label>
                     <span class="block">Password</span>
                     <input class="input" type="password">
-                </label>
+                 </label>
                 <button class="bg-blue-500 text-white p-3 rounded-xl" type="submit">Login</button>
                 <hr>
                 <button class="bg-purple-600 text-white p-3 rounded-xl flex flex-row items-center space-x-4 justify-center">
