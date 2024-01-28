@@ -4,6 +4,7 @@
 
     loggedIn();
 </script>
+
 <main class="mx-auto container">
         <slot></slot>
 </main>
