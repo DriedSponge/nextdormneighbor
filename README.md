@@ -20,7 +20,7 @@ After verifyings UW student login, students can automatically get connected with
 - 25% or 2000+ residents in total access this platfrom on a weekly basis.
 
 ### Revenue/Profit Output
-- Official contract partner with MyHFS/University of Washington to connect housing service with students/residents.
+- Official contract partner with MyHFS/University of Washington to be a paid service to easily organize and advertise school events.
 - Collaborate with local companys to advertise and feature.
 
 ### Competetiors/Existing Solutions
