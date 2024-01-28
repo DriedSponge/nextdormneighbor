@@ -43,7 +43,9 @@ Webapp using Svelte and CloudFlare.
 - Filter or Search options
 
 Credits: 
+
 https://thispersondoesnotexist.com/ - Used for profile picture example. We did not create this.
+
 https://jsonplaceholder.typicode.com/ - Used as JSON. We did not create our own JSON data.
 
 ## Developing
