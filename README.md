@@ -5,10 +5,10 @@ WINFO 2024 Hackathon - Best Coding Design Track
 NextDormNeighbor is an web app that helps student within the University of Washington find campus events. Specfically regarding events related to housings services or clubs.
 
 ## Inspiration and Problem Statement
-A lot of MyHFS/Club events are only posted on a bulletin boards placed within dorms that students quickly pass or never even see a lot of events that are posted on these boards. We envision an app that focuses on being a consistent source to find all student related events while also allowing student communication. This ensures that students can keep up to date with all events they may have interest in. 
+A lot of MyHFS/RSO events are only posted on a bulletin boards placed within dorms that students quickly pass or never even see a lot of events that are posted on these boards. We envision an web app that focuses on being a consistent source of information for students to find all related events. This ensures that students can keep up to date with all events they may have interest in. 
 
 ## How It Works
-After verifyings UW student login, students can automatically get connected with dorms, apartments, or activities that are directly realted to them. They are also able to find events outside those directly correlated with our search and filter features.
+After verifyings UW student login, students can automatically get connected with dorms, apartments, or activities that are directly realted to them. They are also able to find events outside those directly correlated with our organization layout.
 
 ### Key Concept Features:
 - Look at filter through current or upcoming events being held. 
@@ -40,6 +40,10 @@ Webapp using Svelte and CloudFlare.
 ## Next Goals:
 - Connecting UW Student Login
 - Expanding Beyond UW Sphere
+- Filter or Search options
+
+Credits: 
+https://thispersondoesnotexist.com/ - Used for profile picture example. We did not create this.
 
 ## Developing
 
