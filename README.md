@@ -11,9 +11,9 @@ A lot of MyHFS/Club events are only posted on a bulletin boards placed within do
 After verifyings UW student login, students can automatically get connected with dorms, apartments, or activities that are directly realted to them. They are also able to find events outside those directly correlated with our search and filter features.
 
 ### Key Concept Features:
-- Look at current or upcoming events being held.
+- Look at filter through current or upcoming events being held. 
 - Post events or activities student themselves are hosting.
-- Connect with shared interest groups with group chats.
+- Connect with shared interest groups with filtered post.
 
 ### Goals
 - By 3 years or 2027, MyHFS events will have a 25% increase in attendance.
